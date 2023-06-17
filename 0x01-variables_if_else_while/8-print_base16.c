@@ -8,18 +8,16 @@
 int main(void)
 {
 	int number;
+	int hex;
 
-	for (number = '0'; number > '9'; number++)
-	{
-	if (number <= '9')
+	for (number = 48; number <= 57; number++)
 	{
 	putchar(number);
 	}
-	else
-	{
-	putchar(number + 'a');
-	}
-	}
+for (hex = 97; hex <= 102; hex++)
+{
+putchar(hex);
+}
 putchar('\n');
 return (0);
 }
