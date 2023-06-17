@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- * Declaration: 'check if the number is graeter than 5 or less than 6'
+ * Declaration: 'check if the number is greater than 5 or less than 6'
  * Return: Always 0 (success)
  */
 int main(void)
