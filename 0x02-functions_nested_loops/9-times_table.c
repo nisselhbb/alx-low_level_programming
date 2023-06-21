@@ -16,9 +16,21 @@ void times_table(void)
 		for (count = '0'; count <= 9; count++)
 		{
 			r = number * count;
-			_putchar('r');
-			_putchar(',');
-			_putchar(' ');
+			if (r > 9)
+			{
+				_putchar(r / 10 + '0');
+				_putchar(r % 10 + '0');
+			}
+			else if (count != 0)
+			{
+				_putchar(' ');
+				_putchar(r + '0');
+			}
+			if (count != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 		_putchar('$');
 		_putchar('\n');
