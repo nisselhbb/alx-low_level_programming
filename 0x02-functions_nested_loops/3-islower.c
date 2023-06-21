@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -12,16 +11,15 @@ int _islower(int c)
 	char letter;
 	char c;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	if (c >= 'a' && c <= 'z')
 	{
-		if (islower c)
-		{
-			return (1);
-		}
-		_putchar(letter);
-		_putchar('\n');
+		return (1);
 	}
-	return (0);
+	else
+	{
+		return (0);
+	}
+	_putchar('\n');
 }
 
 
