@@ -26,6 +26,10 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(r + '0');
 			}
+			else
+			{
+				_putchar(r + '0');
+			}
 			if (count != 9)
 			{
 				_putchar(',');
