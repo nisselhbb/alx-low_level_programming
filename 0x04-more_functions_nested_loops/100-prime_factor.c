@@ -10,11 +10,11 @@ int main(void)
 	long number = 612852475143;
 	long div = 2;
 
-	while (num > div)
+	while (number > div)
 	{
-		if (num % div == 0)
+		if (number % div == 0)
 		{
-			num = num / div;
+			number = number / div;
 			div = 2;
 		}
 		else
@@ -22,7 +22,7 @@ int main(void)
 			div++;
 		}
 	}
-	printf("%d\n", num);
+	printf("%d\n", number);
 	return (0);
 }
 
