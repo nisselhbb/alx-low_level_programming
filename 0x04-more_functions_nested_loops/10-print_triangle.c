@@ -10,7 +10,6 @@ void print_triangle(int size)
 {
 	int line;
 	int count;
-	int space;
 
 	if (size <= 0)
 	{
@@ -18,12 +17,12 @@ void print_triangle(int size)
 	}
 	for (line = 0; line < size; line++)
 	{
-		for (count = 0; count < size; count++)
+		if (count < size - i - 1)
 		{
-			for (space = 0; space < count; space++)
-			{
-				_putchar(' ');
-			}
+			_putchar(' ');
+		}
+		else
+		{
 			_putchar(35);
 		}
 		_putchar('\n');
