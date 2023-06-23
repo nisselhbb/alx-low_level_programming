@@ -1,4 +1,4 @@
-#inlude "main.h"
+#include "main.h"
 
 /**
  * _isupper - Entry point (check for uppercase character)
@@ -16,5 +16,4 @@ int _isupper(int c)
 	{
 		return (0);
 	}
-	_putchar('\n');
 }
