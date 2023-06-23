@@ -17,13 +17,16 @@ void print_triangle(int size)
 	}
 	for (line = 0; line < size; line++)
 	{
-		if (count < size - line - 1)
+		for (count = 0; count < size; count++)
 		{
-			_putchar(' ');
-		}
-		else
-		{
-			_putchar(35);
+			if (count < size - line - 1)
+			{
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar(35)
+			}
 		}
 		_putchar('\n');
 	}
