@@ -10,20 +10,23 @@
 void print_rev(char *s)
 {
 	int length = strlen(s);
-	int middle = length / 2;
+	int a = 0;
+	int b = length - 1;
 	char temp;
-	int i;
 
 	while (*s != '\0')
 	{
-		for (i = 0; i < middle; i++)
-		{
-			temp = s[i];
-			s[i] = s[length - i - 1];
-			s[length - i - 1] = temp;
-		}
 		_putchar(*s);
-		s--;
+		s++;
+	}
+	while (a < b)
+	{
+		temp = s[a];
+		s[a] = s[b];
+		s[b] = temp;
+
+		a++;
+		b--;
 	}
 	_putchar('\n');
 }
