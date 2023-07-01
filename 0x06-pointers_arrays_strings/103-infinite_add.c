@@ -18,7 +18,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		len1++;
 	while (n2[len2] != '\0')
 		len2++;
-	for (len1 > size_r || len2 > size_r)
+	if (len1 > size_r || len2 > size_r)
 		return (0);
 	for (i = len1 - 1, j = len2 - 1; i >= 0 || j >= 0 || carry; i--, j--)
 	{
