@@ -10,20 +10,17 @@
  */
 char *_strchr(char *s, char c)
 {
-	int index = -1;
 	int length = strlen(s);
+	int i;
 
-	for (int i = 0; i < length; i++)
+	for (i = 0; i < length; i++)
 	{
 		if (s[i] == c)
 		{
-			return (s);
-		}
-		else
-		{
-			return ('\0');
+			return (&s[i]);
 		}
 	}
+	return (NULL);
 }
 
 
