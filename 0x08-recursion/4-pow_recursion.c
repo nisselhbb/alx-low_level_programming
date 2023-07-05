@@ -12,5 +12,7 @@ int _pow_recursion(int x, int y)
 {
 	if (y < 0)
 		return (-1);
-	return (x * factorial(x * *y));
+	if (x == 0 || x == 1)
+		return (1);
+	return (x * y);
 }
