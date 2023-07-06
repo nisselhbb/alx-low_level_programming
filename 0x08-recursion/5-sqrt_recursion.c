@@ -1,5 +1,5 @@
 #include "main.h"
-int _sqrt_helper(int n, int i)
+int _sqrt_helper(int n, int i);
 
 /**
  * _sqrt_recursion - calculates the natural square
