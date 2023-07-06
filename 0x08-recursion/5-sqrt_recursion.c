@@ -1,5 +1,4 @@
 #include "main.h"
-int _sqrt_helper(int n, int i)
 
 /**
  * _sqrt_recursion - calculates the natural square
@@ -14,7 +13,8 @@ int _sqrt_recursion(int n)
 	return (_sqrt_helper(n, 0));
 }
 /**
- * _sqrt_helper - helping function
+ * _sqrt_helper - helper function that performs
+ * the recursive calculations
  * @n: number1
  * @i: number2
  * Return: return natural square root of n
