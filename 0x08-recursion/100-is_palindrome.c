@@ -1,6 +1,6 @@
 #include "main.h"
 #include <string.h>
-int check_palindrome(chat *s, int left, int right);
+int is_palindrome_helper(char *s, int left, int right);
 
 /**
  * is_palindrome - checks if a string is a
@@ -16,17 +16,17 @@ int is_palindrome(char *s)
 	{
 		return (1);
 	}
-	return (check_palindrome(s, 0, length - 1));
+	return (is_palindrome_helper(s, 0, length - 1));
 }
 /**
- * check_palindrome - helps in checking if a string
+ * is_palindrome_helper - helps in checking if a string
  * is palindrome
  * @s: pointer to the string
  * @left: the 1st charcter of the string
  * @right: the last charcter of the string
  * Return: 1 if the string is palidrome, 0 is not
  */
-int check_palindrome(char *s, int left, int right)
+int is_palindrome_helper(char *s, int left, int right)
 {
 	if (left >= right)
 	{
@@ -34,7 +34,7 @@ int check_palindrome(char *s, int left, int right)
 	}
 	else if (s[left] == s[right])
 	{
-		return (check_palindrome(s, left + 1, right - 1));
+		return (is_palindrome_helper(s, left + 1, right - 1));
 	}
 	else
 	{
