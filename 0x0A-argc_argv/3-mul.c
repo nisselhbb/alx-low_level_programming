@@ -10,7 +10,7 @@
  * Return: 1 if more than 2 arguments, 0
  * if correct
  */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	int i;
 	int j;
