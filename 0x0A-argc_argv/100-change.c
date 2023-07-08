@@ -32,6 +32,6 @@ int main(int argc, char *argv[])
 		count = count + i / cents[j];
 		i = i % cents[j];
 	}
-	printf("%ls\n", cents);
+	printf("%i\n", cents);
 	return (0);
 }
