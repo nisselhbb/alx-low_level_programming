@@ -13,6 +13,8 @@
 int main(int argc, char *argv[])
 {
 	int sum = 1;
+	int i;
+	int j = 0;
 
 	if (argc <= 1)
 	{
@@ -21,7 +23,6 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		int j = 0;
 
 		while (argv[i][j] != '\0')
 		{
