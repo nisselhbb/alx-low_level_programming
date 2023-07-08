@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	i = atoi(argv[1]);
-	if (a < 0)
+	if (i < 0)
 	{
 		printf("0\n");
 		return (1);
@@ -32,6 +32,6 @@ int main(int argc, char *argv[])
 		count = count + i / cents[j];
 		i = i % cents[j];
 	}
-	printf("%d\n", cents);
+	printf("%ls\n", cents);
 	return (0);
 }
