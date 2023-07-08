@@ -12,14 +12,18 @@
  */
 int main(int argc, char *argv)
 {
+	int i;
+	int j;
+	int mul;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	int i = atoi(argv[1]);
-	int j = atoi(argv[2]);
-	int mul = i * j;
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+	mul = i * j;
 
 	printf("%d\n", mul);
 	return (0);
