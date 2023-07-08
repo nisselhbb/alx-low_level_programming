@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	int count = 0;
 	int j;
 
-	if (argc <= 1)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -32,6 +32,6 @@ int main(int argc, char *argv[])
 		count = count + i / cents[j];
 		i = i % cents[j];
 	}
-	printf("%j\n", cents);
+	printf("%d\n", cents);
 	return (0);
 }
