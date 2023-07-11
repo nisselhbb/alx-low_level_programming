@@ -13,7 +13,6 @@ char *str_concat(char *s1, char *s2)
 	int s1_len;
 	int s2_len;
 	int size;
-	int i;
 	char *concatenated;
 
 	s1_len = strlen(s1);
@@ -24,10 +23,10 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 	concatenated = (char *) malloc(size * sizeof(char));
-	if (concatenated > NULL)
+	if (concatenated == NULL)
 	{
 		return (NULL);
 	}
-	_strcat(s1, s2);
+	strcat(s1, s2);
 	return (concatenated);
 }
