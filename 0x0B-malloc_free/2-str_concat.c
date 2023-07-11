@@ -15,13 +15,14 @@ char *str_concat(char *s1, char *s2)
 	int size = 0;
 	char *concatenated = NULL;
 
-	s1_len = strlen(s1);
-	s2_len = strlen(s2);
-	size = s1_len + s2_len + 1;
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+
+	s1_len = strlen(s1);
+	s2_len = strlen(s2);
+	size = s1_len + s2_len + 1;
 	concatenated = (char *) malloc(size * sizeof(char));
 	if (concatenated == NULL)
 	{
