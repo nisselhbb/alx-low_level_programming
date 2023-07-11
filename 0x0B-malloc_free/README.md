@@ -1,1 +1,1 @@
-dynamic memory allocation (malloc and free)
+memory allocation (malloc and free)
