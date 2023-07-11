@@ -12,8 +12,8 @@ char *str_concat(char *s1, char *s2)
 {
 	int s1_len = 0;
 	int s2_len = 0;
-	int size;
-	char *concatenated;
+	int size = 0;
+	char *concatenated = NULL;
 
 	s1_len = strlen(s1);
 	s2_len = strlen(s2);
