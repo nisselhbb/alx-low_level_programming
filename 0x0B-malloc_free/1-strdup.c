@@ -10,12 +10,14 @@
  */
 char *_strdup(char *str)
 {
+	int len;
+
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	size_t len = strlen(str);
+	len = strlen(str);
 	char *duplicated = (char *) malloc((len + 1) * sizeof(char));
 
 	if (duplicated == NULL)
