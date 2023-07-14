@@ -34,11 +34,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	concatenated = (char *) malloc((conctsize + 1) * sizeof(char));
 
-	if (concatenated == NULL)
-		return (NULL);
+	if (concatenated ==0)
+		return (0);
 	strcpy(concatenated, s1);
 	for (i = s1_len, j = 0; i < conctsize && j < n; i++, j++)
 		concatenated[i] = s2[j];
 	concatenated[conctsize] = '\0';
-	return (concatenated + 1);
+	return (concatenated);
 }
