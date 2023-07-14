@@ -1,7 +1,6 @@
 #include "main.h"
 #include <string.h>
-#include <stdlib.h>
-char *_memset(char *s, char b, unsigned int n);
+#include <stdlib.h
 /**
  * _calloc - allocates memory for an array
  * @nmemb: array
