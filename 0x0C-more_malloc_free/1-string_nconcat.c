@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		conctsize = s1_len = n;
+		conctsize = s1_len + n;
 	}
 	concatenated = (char *) malloc((conctsize + 1) * sizeof(char));
 
