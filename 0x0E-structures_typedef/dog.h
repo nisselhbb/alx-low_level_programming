@@ -21,9 +21,9 @@ int main(void)
 {
 	struct dog dog;
 
-	dog.name = name;
-	dog.age = age;
-	dog.owner = owner;
+	dog.name = "Poppy";
+	dog.age = 3.5;
+	dog.owner = "Bob";
 	return (0);
 }
 #endif
