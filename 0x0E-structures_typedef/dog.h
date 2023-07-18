@@ -19,7 +19,7 @@ struct dog
  */
 int main(void)
 {
-	struct dog dog;
+	struct dog my_dog;
 
 	dog.name = "Poppy";
 	dog.age = 3.5;
