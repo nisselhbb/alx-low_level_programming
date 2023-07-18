@@ -13,17 +13,4 @@ struct dog
 	float age;
 	char *owner;
 };
-/**
- * main - Entry point
- * Return: Always 0 (success)
- */
-int main(void)
-{
-	struct dog my_dog;
-
-	dog.name = "Poppy";
-	dog.age = 3.5;
-	dog.owner = "Bob";
-	return (0);
-}
 #endif
