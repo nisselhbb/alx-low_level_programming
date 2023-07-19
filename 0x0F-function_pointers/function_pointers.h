@@ -1,3 +1,4 @@
+#include <stddef.h>
 #ifndef FUNCPTR_H
 #define FUNCPTR_H
 int _putchar(char c);
