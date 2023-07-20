@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
-	main_op = get_function_op(argv[2]);
+	main_op = get_op_func(argv[2]);
 	if (!main_op)
 	{
 		printf("Error\n");
