@@ -7,19 +7,19 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	unsigned int i;
+	unsigned int i, j;
 
 	if (n == 0)
 		return (0);
 	va_list par;
 
-	va_start(par + n);
+	va_start(par, n);
 
 	for (i = 0; i < n; i++)
 	{
-		unsigned int j = va_arg(par, unsigned int);
+		j = va_arg(par + n, unsigned int);
 	}
 	va_end(par);
-	return (n);
+	return (j);
 }
 
