@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 	int n = 0, num;
 	char *j;
-	float f;
+	double f;
 	char c;
 
 	va_start(args, format);
@@ -29,11 +29,11 @@ void print_all(const char * const format, ...)
 			printf("%d", num);
 			break;
 		case 'f':
-			f = va_arg(args, float);
+			f = va_arg(args, double);
 			printf("%f", f);
 			break;
 		case 's':
-			j = va_args(args, char*);
+			j = va_arg(args, char*);
 			printf("%s", j);
 			break;
 		default:
@@ -44,7 +44,7 @@ void print_all(const char * const format, ...)
 	{
 		printf(", ");
 	}
-	n++
+	n++;
 	}
 	printf("\n");
 	va_end(args);
