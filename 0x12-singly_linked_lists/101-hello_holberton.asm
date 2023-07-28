@@ -1,10 +1,10 @@
 section .data
-	string db "Hello, Holberton",10
+	msg db "Hello, Holberton",10
 	section .text
-	global start
-start:
+	global main
+main:
 	mov rax,1
 	mov rdi,1
-	mov rsi, string
+	mov rsi, msg
 	mov rdx, 17
 	syscall
