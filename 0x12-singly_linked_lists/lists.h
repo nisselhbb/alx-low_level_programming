@@ -4,17 +4,19 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * struct list_c - singlt linked list
- * @str: pointer to string
- * @len: string's length
- * @next: pointer to the next node
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
  */
-typedef struct list_c
+typedef struct list_s
 {
-	unsigned int len;
-	char *str;
-	struct list_c *next;
-}list_t;
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
 int _putchar(char c);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
