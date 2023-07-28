@@ -6,12 +6,12 @@
 /**
  * struct list_c - singlt linked list
  * @str: pointer to string
- * @length: string's length
+ * @len: string's length
  * @next: pointer to the next node
  */
 typedef struct list_c
 {
-	unsigned int length;
+	unsigned int len;
 	char *str;
 	struct list_c *next;
 }list_t;

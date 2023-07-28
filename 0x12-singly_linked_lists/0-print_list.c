@@ -6,17 +6,17 @@
 */
 size_t print_list(const list_t *h)
 {
-	unsigned int length;
+	unsigned int len;
 	char *str = 0;
 	int node_numbers = 0;
 
 	while (h)
 	{
-		length = h->length;
+		len = h->len;
 		str = h->str;
 
 		if (str)
-			printf("[%d] %s\n", length, str);
+			printf("[%d] %s\n", len, str);
 	       h = h->next;
 		node_numbers++;
 		if (str == NULL)
