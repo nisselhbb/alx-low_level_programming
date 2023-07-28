@@ -6,5 +6,5 @@ start:
 	mov rax,1
 	mov rdi,1
 	mov rsi, string
-	mov rdx, 16
+	mov rdx, 17
 	syscall
