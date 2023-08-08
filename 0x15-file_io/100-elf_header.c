@@ -48,7 +48,7 @@ void print_magic(unsigned char *e_ident)
 
 	printf("  Magic:   ");
 
-	for (i = 0; i < EI _NIDENT; i++)
+	for (i = 0; i < EI_NIDENT; i++)
 	{
 		printf("%02x", e_ident[i]);
 		if (i == EI_NIDENT - 1)
@@ -76,7 +76,7 @@ void print_class(unsigned char *e_ident)
 		break;
 	case ELFCLASS64:
 		printf("ELF64\n");
-		braek;
+		break;
 	default:
 		printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 	}
@@ -102,7 +102,7 @@ void print_data(unsigned char *e_ident)
 		printf("2's complement, big endian\n");
 		break;
 	default:
-		printf("<unknown: %x>\_n", e_ident[EI_CLASS]);
+		printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 	}
 }
 /**
