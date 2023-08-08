@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 {
 	int file_from, file_to, fclose;
 	ssize_t charz, nr;
-	char BUF[1024];
+	char buff[1024];
 
 	if (argc != 3)
 	{
@@ -43,10 +43,10 @@ int main(int argc, char *argv[])
 	charz = 1024;
 	while (charz == 1024)
 	{
-		charz = read(file_from, BUF, 1024);
+		charz = read(file_from, buff, 1024);
 		if (charz == -1)
 			file_error(-1, 0, argv);
-		nr = write(file_to, BUF, charz);
+		nr = write(file_to, buff, charz);
 		if (nr == -1)
 			file_error(0, -1, argv);
 	}
