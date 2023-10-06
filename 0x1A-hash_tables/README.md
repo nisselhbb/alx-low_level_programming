@@ -1,4 +1,4 @@
-#C - Hash tables
+C - Hash tables
 
-#Compilation:
+Compilation:
 	gcc -Wall -pedantic -Werror -Wextra -std=gnu89
